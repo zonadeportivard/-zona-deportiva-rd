@@ -1,86 +1,322 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Zona Deportiva RD</title>
-<meta name="description" content="Noticias, resultados y actualidad deportiva de República Dominicana y el mundo.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zona Deportiva RD | Noticias Deportivas</title>
+
+<meta name="description" content="Zona Deportiva RD: noticias, resultados y actualidad del béisbol, fútbol y baloncesto.">
+
+<meta name="keywords" content="Zona Deportiva RD, deportes dominicanos, béisbol, fútbol, baloncesto">
+
+<meta name="author" content="Zona Deportiva RD">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://zonadeportivard.github.io/-zona-deportiva-rd/">
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f4f6;color:#111827}
-header{background:#07121b;color:#fff}.top{max-width:1180px;margin:auto;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-size:30px;font-weight:900;letter-spacing:-1px}.logo span{color:#ef2029}.tag{font-size:13px;color:#d8dee4}
-nav{background:#0c1b26;border-top:1px solid #243642}.nav{max-width:1180px;margin:auto;display:flex;gap:4px;overflow:auto}.nav a{color:#fff;text-decoration:none;padding:15px 17px;font-weight:700;white-space:nowrap}.nav a:hover,.nav a.active{background:#ef2029}
-main{max-width:1180px;margin:22px auto;padding:0 16px}.grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
-.hero{background:#101c25;border-radius:10px;overflow:hidden;color:white;min-height:350px;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;background:linear-gradient(#0000,#07121bee)}
-.hero .label,.card .label{display:inline-block;background:#ef2029;padding:6px 9px;border-radius:4px;font-size:12px;font-weight:800;width:max-content}.hero h1{font-size:34px;margin:12px 0 8px}.hero p{color:#d7dde2;margin:0}
-.side{display:grid;gap:14px}.side article{background:#fff;padding:18px;border-radius:9px;border-left:5px solid #ef2029}.side h3{margin:7px 0}
-.section{margin-top:26px}.section h2{border-left:6px solid #ef2029;padding-left:10px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:#fff;border-radius:9px;padding:16px;box-shadow:0 2px 8px #00000010}.card h3{margin:10px 0 7px}.muted{color:#6b7280;font-size:13px}
-.ad{min-height:100px;border:2px dashed #aab3ba;border-radius:9px;display:flex;align-items:center;justify-content:center;text-align:center;background:#e8ecef;color:#52606b;margin:22px 0;font-weight:700}
-.sidebarBox{background:#0d1b25;color:#fff;border-radius:9px;padding:18px}.sidebarBox h3{margin-top:0}.rank{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #263744}.num{font-weight:900;color:#ef2029}
-footer{margin-top:35px;background:#07121b;color:#d8dee4;padding:35px 20px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px}
-button{background:#ef2029;color:#fff;border:0;padding:12px 18px;border-radius:5px;font-weight:800;cursor:pointer}
-@media(max-width:800px){.grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.hero h1{font-size:27px}.foot{flex-direction:column}}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f3f5;
+  color: #111827;
+}
+
+header {
+  background: #07121b;
+  color: white;
+  padding: 28px 20px;
+}
+
+.top {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #e53935;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #d1d5db;
+  margin-top: 8px;
+}
+
+nav {
+  background: #0c1b26;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  border-bottom: 3px solid #e53935;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background: #e53935;
+}
+
+main {
+  max-width: 1180px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #07121b, #263746);
+  color: white;
+  padding: 45px 30px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.hero p {
+  font-size: 19px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.label {
+  display: inline-block;
+  background: #e53935;
+  color: white;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.ad {
+  background: white;
+  border: 1px dashed #b8bec5;
+  min-height: 100px;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 5px solid #e53935;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.card h2 {
+  margin-top: 12px;
+  font-size: 23px;
+}
+
+.card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #d62828;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background: #07121b;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #cbd5e1;
+}
+
+@media (max-width: 800px) {
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    padding: 17px;
+    font-size: 16px;
+  }
+
+}
+
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="top">
-    <div><div class="logo">ZONA <span>DEPORTIVA</span> RD</div><div class="tag">Tu pasión deportiva, en un solo lugar</div></div>
-    <button onclick="alert('Aquí puedes conectar tu buscador real.')">BUSCAR</button>
+
+    <div class="logo">
+      ZONA <span>DEPORTIVA</span> RD
+    </div>
+
+    <div class="subtitle">
+      Tu pasión deportiva, en un solo lugar
+    </div>
+
   </div>
-  <nav><div class="nav">
-    <a class="active" href="#">Inicio</a><a href="#beisbol">⚾ Béisbol</a><a href="#futbol">⚽ Fútbol</a><a href="#baloncesto">🏀 Baloncesto</a><a href="#noticias">Noticias</a><a href="#resultados">Resultados</a><a href="#videos">Videos</a>
-  </div></nav>
 </header>
 
-<main>
-  <div class="grid">
-    <article class="hero">
+<nav>
+
+  <a href="#inicio">Inicio</a>
+  <a href="#beisbol">⚾ Béisbol</a>
+  <a href="#futbol">⚽ Fútbol</a>
+  <a href="#baloncesto">🏀 Baloncesto</a>
+
+</nav>
+
+<main id="inicio">
+
+  <section class="hero">
+
+    <span class="label">ZONA DEPORTIVA RD</span>
+
+    <h1>La actualidad deportiva que quieres conocer</h1>
+
+    <p>
+      Noticias, análisis y resultados del mundo deportivo.
+      Toda la pasión del deporte en un solo lugar.
+    </p>
+
+  </section>
+
+  <!-- ESPACIO PARA GOOGLE ADSENSE -->
+
+  <div class="ad">
+    Espacio publicitario
+  </div>
+
+  <section class="grid">
+
+    <article class="card" id="beisbol">
+
       <span class="label">BÉISBOL</span>
-      <h1>La actualidad deportiva que quieres conocer, en un solo lugar</h1>
-      <p>Noticias, análisis y resultados. Reemplaza este contenido por tus noticias reales.</p>
+
+      <h2>⚾ Noticias de béisbol</h2>
+
+      <p>
+        Mantente al día con las noticias, resultados
+        y novedades del béisbol.
+      </p>
+
+      <a href="#beisbol">Ver noticias →</a>
+
     </article>
-    <div class="side">
-      <article><span class="label">FÚTBOL</span><h3>Las noticias más importantes del fútbol</h3><div class="muted">Actualiza este bloque desde tu sistema de publicaciones.</div></article>
-      <article><span class="label">BALONCESTO</span><h3>Todo lo que pasa en la cancha</h3><div class="muted">Ideal para noticias, análisis y resultados.</div></article>
-      <article><span class="label">RD</span><h3>El deporte dominicano en primera línea</h3><div class="muted">Contenido preparado para compartir en redes.</div></article>
-    </div>
+
+    <article class="card" id="futbol">
+
+      <span class="label">FÚTBOL</span>
+
+      <h2>⚽ Actualidad del fútbol</h2>
+
+      <p>
+        Las noticias más importantes del fútbol
+        nacional e internacional.
+      </p>
+
+      <a href="#futbol">Ver noticias →</a>
+
+    </article>
+
+    <article class="card" id="baloncesto">
+
+      <span class="label">BALONCESTO</span>
+
+      <h2>🏀 Todo sobre baloncesto</h2>
+
+      <p>
+        Resultados, análisis y novedades
+        del mundo del baloncesto.
+      </p>
+
+      <a href="#baloncesto">Ver noticias →</a>
+
+    </article>
+
+  </section>
+
+  <!-- SEGUNDO ESPACIO PUBLICITARIO -->
+
+  <div class="ad">
+    Espacio publicitario
   </div>
 
-  <div class="ad">ESPACIO PUBLICITARIO — aquí puedes colocar anuncios cuando tengas tráfico</div>
+  <section class="card">
 
-  <section class="section" id="beisbol"><h2>⚾ Béisbol</h2><div class="cards">
-    <article class="card"><span class="label">BÉISBOL</span><h3>Últimas noticias del béisbol</h3><p>Publica aquí tu noticia y añade una imagen.</p><div class="muted">Hace 2 horas · 12 comentarios</div></article>
-    <article class="card"><span class="label">LIDOM</span><h3>Actualidad de los equipos dominicanos</h3><p>Resultados, movimientos y protagonistas.</p><div class="muted">Hace 4 horas</div></article>
-    <article class="card"><span class="label">MLB</span><h3>Las estrellas dominicanas</h3><p>Seguimiento de jugadores y estadísticas.</p><div class="muted">Hace 6 horas</div></article>
-  </div></section>
+    <h2>Sobre Zona Deportiva RD</h2>
 
-  <section class="section" id="futbol"><h2>⚽ Fútbol</h2><div class="cards">
-    <article class="card"><h3>Noticias internacionales</h3><p>Resultados y actualidad de las principales ligas.</p></article>
-    <article class="card"><h3>Fútbol dominicano</h3><p>Espacio para equipos, jugadores y torneos locales.</p></article>
-    <article class="card"><h3>Lo más comentado</h3><p>Historias deportivas preparadas para redes sociales.</p></article>
-  </div></section>
+    <p>
+      Zona Deportiva RD es un espacio dedicado
+      a los amantes del deporte. Próximamente
+      encontrarás más noticias y contenido deportivo.
+    </p>
 
-  <section class="section" id="baloncesto"><h2>🏀 Baloncesto</h2><div class="cards">
-    <article class="card"><h3>NBA</h3><p>Noticias, resultados y protagonistas.</p></article>
-    <article class="card"><h3>Baloncesto RD</h3><p>Contenido local y seguimiento de jugadores.</p></article>
-    <article class="card"><h3>Internacional</h3><p>Las historias que están marcando la jornada.</p></article>
-  </div></section>
+  </section>
 
-  <div class="grid section" id="resultados">
-    <div><div class="sidebarBox"><h3>📊 Resultados</h3><div class="rank"><span class="num">⚾</span>LIDOM <b style="margin-left:auto">—</b></div><div class="rank"><span class="num">🏀</span>NBA <b style="margin-left:auto">—</b></div><div class="rank"><span class="num">⚽</span>Fútbol <b style="margin-left:auto">—</b></div><p class="muted" style="color:#b9c5cd">Conecta una fuente de resultados para mostrar datos en vivo.</p></div></div>
-    <aside><div class="sidebarBox"><h3>🔥 Lo más leído</h3><div class="rank"><span class="num">1</span>Noticia destacada</div><div class="rank"><span class="num">2</span>Historia deportiva</div><div class="rank"><span class="num">3</span>Última hora</div><div class="rank"><span class="num">4</span>Análisis</div></div></aside>
-  </div>
-
-  <section class="section" id="videos"><h2>🎥 Videos</h2><div class="cards">
-    <article class="card"><h3>Video destacado</h3><p>Inserta aquí tu video de YouTube.</p></article>
-    <article class="card"><h3>Entrevistas</h3><p>Clips y entrevistas deportivas.</p></article>
-    <article class="card"><h3>Resumen de la jornada</h3><p>Contenido corto para atraer visitantes.</p></article>
-  </div></section>
-
-  <div class="ad">TU MARCA AQUÍ — espacio para patrocinadores directos</div>
 </main>
 
-<footer><div class="foot"><div><strong>ZONA DEPORTIVA RD</strong><br>Noticias y pasión deportiva.</div><div>Inicio · Béisbol · Fútbol · Baloncesto · Noticias · Contacto</div><div>© 2026 Zona Deportiva RD</div></div></footer>
+<footer>
+
+  <h2>Zona Deportiva RD</h2>
+
+  <p>Tu pasión deportiva, en un solo lugar.</p>
+
+  <p>© 2026 Zona Deportiva RD</p>
+
+</footer>
+
 </body>
 </html>
